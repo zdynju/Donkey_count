@@ -1,0 +1,13 @@
+project: Donkey_count
+task: detect
+class_names:
+  - donkey
+
+data: data/dataset.yaml
+model: yolo26s.pt
+epochs: 100
+imgsz: 960
+batch: 8
+device: auto
+workers: 4
+patience: 30
